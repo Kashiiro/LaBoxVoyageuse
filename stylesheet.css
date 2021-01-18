@@ -28,6 +28,8 @@ header li a {
     padding: 20px 20px;
     border-right: 1px solid #f4f4f4;
     text-decoration: none;
+    color: black;
+    font-family: "Montserrat Medium", serif;
 }
 
 header li a:hover,
@@ -46,7 +48,19 @@ header .menu-btn:hover {
 }
 
 .shop{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 77%;
+}
 
+.user{
+    text-decoration: none;
+    width: 30px;
+}
+
+.basket{
+    margin-left: 8px;
+    width: 30px;
 }
 
 /* menu */
