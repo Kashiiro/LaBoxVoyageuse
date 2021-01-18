@@ -36,11 +36,13 @@ html{
 }
 
 .header .logo {
+    position: absolute;
     display: block;
     float: left;
     font-size: 2em;
     text-decoration: none;
     width: 200px;
+    margin-left: 18%;
 }
 
 /* menu */
