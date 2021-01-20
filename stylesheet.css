@@ -158,14 +158,61 @@ header .menu a:focus .menu{
     font-size: 17px;
     width: 180px;
     height: 65px;
-    margin-top: 110%;
-    margin-left: 5%;
+    margin-top: 540px;
+    margin-left: 20%;
     opacity: 86%;
 }
 
+main h1{
+    font-size: 23px;
+    margin-top: 60px;
+    margin-bottom: 62px;
+    text-align: center;
+}
 
+.content img{
+    width: 110px;
+}
 
+.content h2{
+    font-size: 20px;
+}
+.content p{
+     font-size: 15px;
+ }
 
+.container{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.text{
+    margin-left: 21px;
+}
+
+.textmid{
+    margin-right: 20px;
+}
+
+.article{
+    text-align: center;
+}
+
+.article h2{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.article p{
+    font-size: 15px;
+}
+
+.article img{
+
+}
 
 
 
