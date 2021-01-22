@@ -36,7 +36,6 @@ header li a {
     display: block;
     padding: 20px 20px;
     border-right: 1px solid #f4f4f4;
-    text-decoration: none;
     color: black;
     font-size: 18px;
     font-weight: bold;
@@ -301,10 +300,12 @@ footer h2{
     font-size: 16px;
 }
 
-footer p{
+footer a{
     font-family: Montserrat, serif;
     font-size: 14px;
+    color: black;
 }
+
 
 .help{
     margin-right: 20px;
