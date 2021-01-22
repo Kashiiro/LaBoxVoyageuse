@@ -1,12 +1,15 @@
 @font-face {
     font-family: "Montserrat";
-    src: url("/font/Montserrat-Regular.ttf") format("ttf");
+    src: url("font/montserrat.ttf") format("truetype");
+    font-weight: auto;
 }
 
 @font-face {
     font-family: "Montserrat Medium";
-    src: url("/font/Montserrat-Medium.ttf") format("ttf");
+    src: url("font/montserrat-medium.ttf") format("truetype");
+    font-weight: auto;
 }
+
 
 html{
     padding-top: 0;
@@ -174,7 +177,7 @@ header .menu a:focus .menu{
 .nosbox{
     position: absolute;
     display: block;
-    font-family: "Montserrat Medium", serif;
+    font-family: "montserrat Medium", serif;
     font-size: 17px;
     width: 180px;
     height: 65px;
