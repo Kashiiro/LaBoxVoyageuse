@@ -181,6 +181,10 @@ main h1{
     text-align: center;
 }
 
+.content{
+    justify-content: center;
+}
+
 .content img{
     width: 110px;
 }
@@ -250,17 +254,18 @@ hr{
 /* Footer */
 
 .insurance{
-    text-align: center;
     background-color: #F1A82F;
     font-family: "Montserrat Medium", serif;
     padding-top: 50px;
     padding-bottom: 50px;
-    width: 100%;
 }
 
 .representation{
+    text-align: center;
+    background-color: #F1A82F;
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .representation p {
@@ -272,11 +277,11 @@ hr{
 }
 
 .package{
-    margin-right: 55px;
+    margin-right: 23%;
 }
 
 .credit{
-    margin-right: 30px;
+    margin-right: 17%;
 }
 
 
@@ -289,7 +294,6 @@ hr{
     display: flex;
     flex-direction: row;
     text-align: center;
-    width: 100%;
 }
 
 footer h2{
@@ -316,8 +320,12 @@ footer p{
         margin-left: 10%;
     }
 
-    .representation{
-        padding-left: 20%;
+    .package {
+        margin-right: 27%;
+    }
+
+    .credit {
+        margin-right: 23%;
     }
 
     .infos{
@@ -326,18 +334,22 @@ footer p{
 
 }
 
-@media (min-width: 500px) {
+@media (min-width: 495px) {
 
     .representation{
-        padding-left: 25%;
+        flex-wrap: nowrap;
     }
 
     .package {
-        padding-right: 15%;
+        margin-right: 5%;
+    }
+
+    .allergene{
+        margin-right: 5%;
     }
 
     .credit{
-        padding-right: 15%
+        margin-right: 5%
     }
 
     .infos{
@@ -440,9 +452,74 @@ footer p{
 
     /* Footer */
 
-    .insurance{
-        display: flex;
-        width: 100%;
+    .logofoot{
+        margin-left: 20%;
+    }
+
+    .infos {
+        margin-left: 28%;
+    }
+
+
+}
+
+
+@media (min-width: 1440px) {
+
+
+    /* Header */
+
+    header .menu {
+        margin-left: 30%;
+    }
+
+    .logo {
+        margin-left: 18%;
+    }
+
+    .shop {
+        margin-left: 70%;
+    }
+
+
+    /* Main */
+
+    .nosbox {
+        margin-left: 30%;
+    }
+
+    .container p{
+        width: 243px;
+        height: 76px;
+    }
+
+    .containerstart{
+        margin-left: 0;
+    }
+
+    .containermid{
+        margin-left: 0;
+    }
+
+    .containerend{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .article {
+        margin: 35px 70px 65px 184px;
+    }
+
+    /* Footer */
+
+    .logofoot {
+        margin-left: 30%;
+    }
+
+    .infos {
+        margin-left: 38%;
     }
 
 }
+
+
