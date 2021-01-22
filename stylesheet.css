@@ -183,7 +183,7 @@ header .menu a:focus .menu{
     height: 65px;
     margin-top: 540px;
     margin-left: 15%;
-    opacity: 86%;
+    opacity: 90%;
 }
 
 main h1{
@@ -387,12 +387,10 @@ footer a{
         display: flex;
     }
 
-    header li {
-        float: left;
-    }
 
     header li a {
-        padding: 15px 5px;
+        float: left;
+        padding: 15px 12px;
         border-right: none;
         font-size: 16px;
     }
@@ -485,6 +483,10 @@ footer a{
 
     header .menu {
         margin-left: 30%;
+    }
+
+    header li a {
+        padding: 15px 15px;
     }
 
     .logo {
