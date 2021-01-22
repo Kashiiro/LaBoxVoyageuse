@@ -9,6 +9,10 @@ body{
     flex-direction: column;
 }
 
+a{
+    text-decoration: none;
+}
+
 header {
     background-color: #fff;
     width: 100%;
@@ -158,8 +162,8 @@ header .menu a:focus .menu{
     font-size: 17px;
     width: 180px;
     height: 65px;
-    margin-top: 540px;
-    margin-left: 20%;
+    margin-top: 355px;
+    margin-left: 15%;
     opacity: 86%;
 }
 
@@ -203,6 +207,7 @@ main h1{
 }
 
 .article{
+    width: 288px;
     text-align: center;
     margin: 80px 55px 65px 55px;
 }
@@ -226,10 +231,47 @@ main h1{
 }
 
 
+.representation{
+    padding-left: 15%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    text-align: center;
+    background-color: #F1A82F;
+    font-family: "Montserrat Medium", serif;
+}
 
+.package{
+    padding-right: 20%;
+}
 
+.credit{
+    padding-right: 10%;
+}
 
+.representation p{
+    font-size: 14px;
+    font-weight: bold;
+}
 
+.representation img{
+    width: 85px;
+}
+
+.logofoot{
+    width: 160px;
+    margin-left: 10%;
+}
+
+.infos{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
 
 
 
