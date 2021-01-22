@@ -9,9 +9,13 @@ body{
     flex-direction: column;
 }
 
+
 a{
     text-decoration: none;
 }
+
+
+/* Nav */
 
 header {
     background-color: #fff;
@@ -21,8 +25,6 @@ header {
 }
 
 header ul {
-    margin-top: 60px;
-    padding: 0;
     list-style: none;
     overflow: hidden;
     background-color: white;
@@ -36,38 +38,13 @@ header li a {
     border-right: 1px solid #f4f4f4;
     text-decoration: none;
     color: black;
+    font-size: 18px;
     font-weight: bold;
 }
 
 header li a:hover,
 header .menu-btn:hover {
     background-color: #f4f4f4;
-}
-
-.logo {
-    position: absolute;
-    display: block;
-    float: left;
-    font-size: 2em;
-    text-decoration: none;
-    width: 150px;
-    margin-left: 20%;
-}
-
-.shop{
-    position: absolute;
-    margin-top: 25px;
-    margin-left: 70%;
-}
-
-.user{
-    text-decoration: none;
-    width: 25px;
-}
-
-.basket{
-    margin-left: 10px;
-    width: 30px;
 }
 
 /* menu */
@@ -124,6 +101,7 @@ header .menu-btn {
 
 header .menu-btn:checked ~ .menu {
     max-height: 30vh;
+    padding: 60px 0;
 }
 
 header .menu-btn:checked ~ .menu-icon .navicon {
@@ -146,6 +124,35 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 header .menu a:focus .menu{
     display: none;
 }
+
+.logo {
+    position: absolute;
+    display: block;
+    float: left;
+    font-size: 2em;
+    text-decoration: none;
+    width: 150px;
+    margin-left: 20%;
+}
+
+.shop{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 70%;
+}
+
+.user{
+    text-decoration: none;
+    width: 25px;
+}
+
+.basket{
+    margin-left: 10px;
+    width: 30px;
+}
+
+
+/* Main */
 
 .img{
     background-image: url("images/back.png");
@@ -189,9 +196,18 @@ main h1{
     display: flex;
     align-items: center;
     margin-top: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 6%;
+    margin-left: 6%;
 }
+
+hr{
+    margin: 100px auto;
+    width: 85%;
+    height: 6px;
+    background-color: #707070;
+    border: none;
+}
+
 
 .text{
     margin-left: 21px;
@@ -231,32 +247,38 @@ main h1{
 }
 
 
-.representation{
-    padding-left: 15%;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
+/* Footer */
+
+.insurance{
     text-align: center;
     background-color: #F1A82F;
     font-family: "Montserrat Medium", serif;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
 }
 
-.package{
-    padding-right: 20%;
+.representation{
+    display: flex;
+    width: 100%;
 }
 
-.credit{
-    padding-right: 10%;
-}
-
-.representation p{
+.representation p {
     font-size: 14px;
-    font-weight: bold;
 }
 
 .representation img{
     width: 85px;
 }
+
+.package{
+    margin-right: 55px;
+}
+
+.credit{
+    margin-right: 30px;
+}
+
 
 .logofoot{
     width: 160px;
@@ -267,6 +289,7 @@ main h1{
     display: flex;
     flex-direction: row;
     text-align: center;
+    width: 100%;
 }
 
 footer h2{
@@ -284,28 +307,55 @@ footer p{
 }
 
 
+/* Media*/
+
+@media (min-width: 425px) {
+
+    .container{
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .representation{
+        padding-left: 20%;
+    }
+
+    .infos{
+        margin-left: 10%;
+    }
+
+}
+
+@media (min-width: 500px) {
+
+    .representation{
+        padding-left: 25%;
+    }
+
+    .package {
+        padding-right: 15%;
+    }
+
+    .credit{
+        padding-right: 15%
+    }
+
+    .infos{
+        margin-left: 15%;
+    }
+
+    .container{
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+
+}
 
 
 
+@media (min-width: 769px) {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 700px) {
-
+    /* Header */
     header{
         height: 60px;
         display: flex;
@@ -316,8 +366,9 @@ footer p{
     }
 
     header li a {
-        padding: 20px 30px;
-        border-right: none
+        padding: 15px 5px;
+        border-right: none;
+        font-size: 16px;
     }
 
     header .menu {
@@ -335,6 +386,63 @@ footer p{
     header ul{
         background-color: #ffffff;
         height: 35%;
+    }
+
+    header .menu {
+        margin-left: 20%;
+    }
+
+    .logo{
+        margin-left: 5%;
+    }
+
+    .shop{
+        margin-left: 86%;
+    }
+
+
+    /* Main */
+
+    .content{
+        display: flex;
+    }
+
+    .container{
+        display: block;
+        text-align: center;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .containermid{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .containerend{
+        padding-bottom: 0;
+        border-bottom: none;
+        border-width: 0;
+    }
+
+    .text{
+        margin-left: 0;
+    }
+
+    .textmid{
+        margin-right: 0;
+    }
+
+    .article{
+        margin: 35px 70px 65px 110px;;
+    }
+
+
+    /* Footer */
+
+    .insurance{
+        display: flex;
+        width: 100%;
     }
 
 }
